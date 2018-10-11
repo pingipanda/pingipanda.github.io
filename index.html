@@ -6,34 +6,45 @@
         <style>
         body {
             background-color: rgb(253,224,221);
+            font-family: fantasy;
         }
         h1,h2 {
             color: rgb(221,52,151);
-            font-family: fantasy;            
         }
         table {
             color: rgb(92, 92, 92);
-            font-family: fantasy;
         }
         p {
             color: rgb(92, 92, 92);
-            font-family: fantasy;
-        }
-        ol {
-            
         }
         .recipes-list {
             color: rgb(122,1,119);
         }
-        .recipes-titles {
-            color: rgb(221,52,151);
+        .recipes-rect {
+            width: 80%;
+        }
+        #recipe-sidebar {
+            background-color: rgb(164, 136, 168);
+            float: left;
+            width: 30%;
+            padding: 6px;
+            margin-right: 6px;
+        }
+        #top-banner {
+            border: 1px solid purple;
+            padding: 6px;
+        }
+        #recipe-content {
+            float: right;
+            width: 65%;
         }
         </style>
     </head>
     <body>
-       
+        <div id="top-banner">       
         <h1>Diana's Recipe Book</h1>
-        
+        </div>
+        <div id="recipe-sidebar">
         <h2 class="recipes-list">Contents:</h2>
         
         <ol>
@@ -41,7 +52,8 @@
             <li><a href="#recipe-2">Tournedos de saumon aux poireaux</a></li>
             <li><a href="#recipe-3">Pots de crème au chocolat </a></li>
         </ol>
-    
+        </div>
+        <div id="recipe-content">
     <!-- This recipe is from here:"The pancakes of Nawal" https://www.marmiton.org/recettes/recette_pancake-de-nawal_72810.aspx -->    
         <h2 class="recipes-titles" id="recipe-1">Pancakes</h2>
         
@@ -103,6 +115,7 @@
             </tbody>
         </table>
         
+        <div class="recipes-rect">
         <p><strong>Step 1:</strong> Separate the egg whites and yolks.<br>
         <strong>Step 2:</strong> Mix the egg yolks with the sugars, milk, flour, baking powder and the salt while avoiding bumps.<br>
         <strong>Step 3:</strong> Add the melted butter and then mix in the egg snow whites delicately.<br>
@@ -112,7 +125,7 @@
 </p>
         
     <p><em>Source: <a target="_blank" href="https://www.marmiton.org/recettes/recette_pancake-de-nawal_72810.aspx">Marmiton</a></em></p>
-
+        </div>
         <h2 class="recipes-titles" id="recipe-2">Tournedos de saumon aux poireaux</h2>
         <table>
             <thead>
@@ -180,6 +193,7 @@
             </tbody>
         </table>
         
+        <div class="recipes-rect">
         <p><strong>Step 1:</strong> Peel the onions and the leek and cut in small pieces.<br>
         <strong>Step 2:</strong> In a pot cook the onions a couple of minutes with the butter and add the leek. Salt and pepper. Add water up to half the height of the vegetables and cook for 10 minutes. Remove the lid, let the liquid evaporate and adjust on salt and pepper.<br>
         <strong>Step 3:</strong> Chop the ciboulette. Mix the olive oil and vinegar in a bowl. Add salt and "piment d'espelette" then the ciboulette and some diced dried tomatoes.<br>
@@ -188,7 +202,7 @@
 </p>
         
     <p><em>Source: <a target="_blank" href="https://www.atelierdeschefs.fr/fr/recette/3838-dos-de-saumon-a-l-unilaterale-fondue-de-poireaux-et-sauce-vierge.php">L'atelier des chefs</a></em></p>    
-
+        </div>
         <h2 class="recipes-titles" id="recipe-2">Pots de crème au chocolat</h2>
         <table>
             <thead>
@@ -243,7 +257,7 @@
                 </tr>
             </tbody>
         </table>
-        
+        <div class="recipes-rect">
         <p><strong>Step 1:</strong> Heat the milk with the cream and the cinnamon stick to medium heat.<br>
         <strong>Step 2:</strong> In a bowl mix the eggs and the sugar till a creamy color then add the corn starch.<br>
         <strong>Step 3:</strong> Break the chocolate into pieces in a bowl.<br>
@@ -253,6 +267,8 @@
         <strong>Step 7:</strong> Divide the mixture into glass recepients and leave to cool, then reserve in the fridge for at least 2 hours.<br>
 </p>
         
-    <p><em>Source: <a target="_blank" href="https://www.atelierdeschefs.fr/fr/recette/10402-petits-pots-de-creme-chocolat-cannelle-et-madeleines-au-miel.php">L'atelier des chefs</a></em></p> 
+    <p><em>Source: <a target="_blank" href="https://www.atelierdeschefs.fr/fr/recette/10402-petits-pots-de-creme-chocolat-cannelle-et-madeleines-au-miel.php">L'atelier des chefs</a></em></p>
+        </div>
+        </div>
     </body>
 </html>
